@@ -5,6 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -29,9 +30,9 @@ public class Question4Test {
     }
 
     @Test
-    public void getUpperCase() {
+    public void getUpperCase() throws IOException {
         // getting the file from resources folder
-        File file = new File("src/main/tests/resources/text4.txt");
+        File file = new File("/home/saurabh/Documents/Java_P2/Java_PROGRAM_PE_2/src/main/tests/resources/test4.txt");
         assertEquals("hello, is it me you are looking for? i can see it in your eyes 12345678@#$%.",q4.getUpperCase(file.getAbsolutePath()));
         assertNull("The return value should be null",q4.getUpperCase(""));
     }

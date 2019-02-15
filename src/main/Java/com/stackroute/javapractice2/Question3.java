@@ -5,7 +5,9 @@ public class Question3 {
 
 
       public String[] isMember(String name, int age, double salary) {
-          return null;
+
+         String details[]={name,String.valueOf(age),String.valueOf(salary)};
+         return details;
       }
   }
 }

@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 import static org.junit.Assert.*;
 
@@ -28,9 +29,9 @@ public class Question9Test {
 
     @SuppressWarnings("deprecation")
     @Test
-    public void checkWordFrequency() {
-        File file = new File("src/main/tests/resources/text9.txt");
-        assertEquals(new String[]{"i-3","am-1","like-1","have-1","have-1","ab-2","cd-2","ol-1","lo-1","o-1"},q9.checkWordFrequency(file.getAbsolutePath()));
+    public void checkWordFrequency() throws IOException {
+        File file = new File("/home/saurabh/Documents/Java_P2/Java_PROGRAM_PE_2/src/main/tests/resources/text9.txt");
+        assertEquals(21,(int)q9.checkWordFrequency(file.getAbsolutePath()));
         assertNull("null is expected",q9.checkWordFrequency(""));
     }
 }

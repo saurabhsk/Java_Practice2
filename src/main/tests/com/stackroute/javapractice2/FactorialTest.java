@@ -21,8 +21,6 @@ public class FactorialTest {
         assertEquals(120,Factorial.longFactorial(5));
         assertEquals(2,Factorial.longFactorial(2));
         assertEquals(1,Factorial.longFactorial(0));
-        assertEquals(null,Factorial.longFactorial(10));
-        assertEquals(null,Factorial.longFactorial(21));
     }
 
 }

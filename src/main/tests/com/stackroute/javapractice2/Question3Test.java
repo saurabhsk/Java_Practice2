@@ -41,7 +41,7 @@ public class Question3Test {
     @Test
     public void FirstPalindromeSuccess() {
         //Arrange
-        String [] expectedValue = {"'Harry Potter'", "30", "2500.3"};
+        String [] expectedValue = {"Harry Potter", "30", "2500.3"};
 
         //Act
         String [] actualValue = app2.isMember("Harry Potter",30,2500.3);

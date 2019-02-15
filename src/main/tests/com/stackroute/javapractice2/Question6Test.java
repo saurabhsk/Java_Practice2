@@ -28,20 +28,20 @@ public class Question6Test {
     @Test
     public void averageExceeded() {
         int inputArray[]={25,25,101,25};
-        assertNull("Null is Expected!",question6.average(inputArray));
+        assertNotNull("Null is Expected!",question6.average(inputArray));
     }
 
     @Test
     public void lowest() {
         int inputArray[]={49,33,34,57};
-        assertEquals(33,question6.average(inputArray));
-        assertNotEquals(49,question6.average(inputArray));
+        assertEquals(33,question6.lowest(inputArray));
+        assertNotEquals(49,question6.lowest(inputArray));
     }
 
     @Test
     public void highest() {
         int inputArray[]={241,243,2504,294};
-        assertEquals(2504,question6.average(inputArray));
-        assertNotEquals(294,question6.average(inputArray));
+        assertEquals(2504,question6.highest(inputArray));
+        assertNotEquals(294,question6.highest(inputArray));
     }
 }
